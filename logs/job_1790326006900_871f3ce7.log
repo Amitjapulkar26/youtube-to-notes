@@ -1,0 +1,14 @@
+[2026-09-25T08:46:46.933Z] [INFO] [VALIDATING_URL] Validating YouTube URL...
+[2026-09-25T08:46:46.946Z] [INFO] Video ID: sVV2NDcZh5k
+[2026-09-25T08:46:46.948Z] [INFO] [FETCHING_VIDEO_INFO] Fetching lecture information...
+[2026-09-25T08:47:02.164Z] [INFO] [FETCHING_VIDEO_INFO] Found: Lecture 01 - Fundamentals of Information Systems-1
+[2026-09-25T08:47:02.170Z] [INFO] [TRYING_CAPTIONS] Checking for captions...
+[2026-09-25T08:47:02.172Z] [INFO] [TRYING_CAPTIONS] Trying caption method: manual_en (1/6)
+[2026-09-25T08:47:10.628Z] [INFO] [TRYING_CAPTIONS] Trying caption method: auto_en (2/6)
+[2026-09-25T08:47:20.246Z] [INFO] [TRYING_CAPTIONS] Trying caption method: manual_hi (3/6)
+[2026-09-25T08:47:39.793Z] [INFO] [TRYING_CAPTIONS] Trying caption method: auto_hi (4/6)
+[2026-09-25T08:48:02.038Z] [INFO] [TRYING_CAPTIONS] Trying caption method: manual_any (5/6)
+[2026-09-25T08:48:20.321Z] [INFO] [TRYING_CAPTIONS] Trying caption method: auto_any (6/6)
+[2026-09-25T08:48:27.755Z] [INFO] Captions unavailable: No captions available from any method
+[2026-09-25T08:48:27.758Z] [INFO] [CHECK_AUDIO_TOOLS] Captions unavailable. Checking audio tools...
+[2026-09-25T08:48:45.093Z] [INFO] [ERROR] Whisper is not available. Cannot transcribe. Please install Python + faster-whisper.

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NoteCraft AI — Turn any YouTube lecture into beautiful handwritten study notes">
+  <title>NoteCraft AI — Lecture to Handwritten Notes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Patrick+Hand&family=Caveat:wght@400;500;600;700&family=Permanent+Marker&family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- ============ HEADER ============ -->
+  <header id="appHeader">
+    <div class="header-inner">
+      <div class="logo" id="logo" tabindex="0" role="button" aria-label="Go to home">
+        <span class="logo-icon">✍️</span>
+        <span class="logo-text">NoteCraft <span class="logo-ai">AI</span></span>
+      </div>
+      <nav class="header-nav" aria-label="Main navigation">
+        <button id="btnHistory" class="nav-btn" aria-label="View history">
+          <span class="nav-icon">📚</span>
+          <span class="nav-label">History</span>
+        </button>
+        <button id="btnSystemStatus" class="nav-btn" aria-label="System status">
+          <span class="nav-icon">⚙️</span>
+          <span class="nav-label">Status</span>
+        </button>
+        <button id="btnThemeToggle" class="nav-btn" aria-label="Toggle dark mode">
+          <span class="nav-icon" id="themeIcon">🌙</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ MAIN CONTENT ============ -->
+  <main id="mainContent">
+
+    <!-- LANDING VIEW -->
+    <section id="viewLanding" class="view active">
+      <div class="landing-hero">
+        <div class="hero-glow"></div>
+        <h1 class="hero-title">
+          <span class="hero-icon">✍️</span>
+          NoteCraft <span class="accent">AI</span>
+        </h1>
+        <p class="hero-subtitle">Turn any lecture into notes you'll actually revise.</p>
+
+        <div class="input-card">
+          <div class="input-group">
+            <label for="urlInput" class="input-label">YouTube Lecture URL</label>
+            <div class="url-input-wrap">
+              <span class="input-icon">🔗</span>
+              <input type="url" id="urlInput" class="url-input"
+                     placeholder="Paste YouTube lecture URL here..."
+                     autocomplete="off" aria-label="YouTube URL">
+              <span id="urlStatus" class="url-status" aria-live="polite"></span>
+            </div>
+          </div>
+
+          <div class="options-row">
+            <div class="option-group">
+              <label for="langSelect">Language</label>
+              <select id="langSelect">
+                <option value="English" selected>English</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Hinglish">Hinglish</option>
+              </select>
+            </div>
+            <div class="option-group">
+              <label for="styleSelect">Note Style</label>
+              <select id="styleSelect">
+                <option value="bluePen" selected>Blue Pen</option>
+                <option value="blackPen">Black Pen</option>
+                <option value="colorful">Colorful</option>
+                <option value="minimal">Minimal</option>
+              </select>
+            </div>
+            <div class="option-group">
+              <label for="examToggle">Exam Mode</label>
+              <div class="toggle-wrap">
+                <input type="checkbox" id="examToggle" class="toggle-input">
+                <label for="examToggle" class="toggle-label">
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="action-row">
+            <button id="btnGenerate" class="btn btn-primary btn-large" disabled>
+              <span class="btn-icon">🚀</span>
+              Generate Notes
+            </button>
+            <button id="btnDemo" class="btn btn-secondary">
+              <span class="btn-icon">✨</span>
+              Try Demo
+            </button>
+          </div>
+        </div>
+
+        <div class="features-strip">
+          <div class="feature-chip"><span>📝</span> Handwritten Style</div>
+          <div class="feature-chip"><span>🧠</span> AI-Powered</div>
+          <div class="feature-chip"><span>🎯</span> Exam Ready</div>
+          <div class="feature-chip"><span>📊</span> Auto Diagrams</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESSING VIEW -->
+    <section id="viewProcessing" class="view">
+      <div class="processing-card">
+        <div class="processing-header">
+          <h2>Processing Lecture</h2>
+          <button id="btnCancel" class="btn btn-danger btn-small">Cancel</button>
+        </div>
+
+        <div id="videoPreview" class="video-preview hidden">
+          <img id="videoThumb" src="" alt="Video thumbnail" class="video-thumb">
+          <div class="video-meta">
+            <h3 id="videoTitle"></h3>
+            <p id="videoChannel"></p>
+            <p id="videoDuration"></p>
+          </div>
+        </div>
+
+        <div class="progress-section">
+          <div class="progress-bar-wrap">
+            <div id="progressBar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-fill"></div>
+            </div>
+            <span id="progressPercent" class="progress-percent">0%</span>
+          </div>
+          <p id="progressMessage" class="progress-message" aria-live="polite">Starting...</p>
+        </div>
+
+        <div id="stageLog" class="stage-log" aria-label="Processing log"></div>
+
+        <div id="processingTimeout" class="timeout-warning hidden">
+          <p>⏳ Processing is taking longer than expected...</p>
+          <div class="timeout-actions">
+            <button id="btnTimeoutCancel" class="btn btn-danger btn-small">Cancel</button>
+            <button id="btnTimeoutContinue" class="btn btn-secondary btn-small">Continue Waiting</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOTES VIEW -->
+    <section id="viewNotes" class="view">
+      <div class="notes-toolbar">
+        <button id="btnBackToHome" class="btn btn-ghost">← Back</button>
+        <div class="toolbar-center">
+          <h2 id="notesTitle" class="notes-view-title"></h2>
+        </div>
+        <div class="toolbar-actions">
+          <select id="exportSelect" class="export-select" aria-label="Export format">
+            <option value="">Export ↓</option>
+            <option value="print">🖨️ Print / PDF</option>
+            <option value="html">📄 HTML</option>
+            <option value="markdown">📝 Markdown</option>
+            <option value="text">📋 Plain Text</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="notebookContainer" class="notebook-container">
+        <!-- Pages are rendered here by JS -->
+      </div>
+    </section>
+
+    <!-- HISTORY VIEW -->
+    <section id="viewHistory" class="view">
+      <div class="history-header">
+        <button id="btnHistoryBack" class="btn btn-ghost">← Back</button>
+        <h2>📚 Recent Notes</h2>
+      </div>
+      <div id="historyList" class="history-list">
+        <p class="empty-state">No notes yet. Generate your first notes!</p>
+      </div>
+    </section>
+
+    <!-- SYSTEM STATUS VIEW -->
+    <section id="viewSystem" class="view">
+      <div class="system-header">
+        <button id="btnSystemBack" class="btn btn-ghost">← Back</button>
+        <h2>⚙️ System Status</h2>
+      </div>
+      <div id="systemChecks" class="system-checks">
+        <div class="system-loading">Checking system...</div>
+      </div>
+      <div class="setup-guide">
+        <h3>Setup Guide</h3>
+        <div class="setup-steps">
+          <div class="setup-step">
+            <span class="step-num">1</span>
+            <div>
+              <h4>Node.js</h4>
+              <p>Required. <a href="https://nodejs.org" target="_blank" rel="noopener">Download Node.js</a></p>
+            </div>
+          </div>
+          <div class="setup-step">
+            <span class="step-num">2</span>
+            <div>
+              <h4>Python 3.10+</h4>
+              <p>Required for Whisper. <a href="https://python.org" target="_blank" rel="noopener">Download Python</a></p>
+            </div>
+          </div>
+          <div class="setup-step">
+            <span class="step-num">3</span>
+            <div>
+              <h4>FFmpeg</h4>
+              <p>Required for audio. <a href="https://ffmpeg.org/download.html" target="_blank" rel="noopener">Download FFmpeg</a></p>
+            </div>
+          </div>
+          <div class="setup-step">
+            <span class="step-num">4</span>
+            <div>
+              <h4>yt-dlp</h4>
+              <p><code>pip install yt-dlp</code></p>
+            </div>
+          </div>
+          <div class="setup-step">
+            <span class="step-num">5</span>
+            <div>
+              <h4>Faster-Whisper</h4>
+              <p><code>pip install faster-whisper</code></p>
+            </div>
+          </div>
+          <div class="setup-step">
+            <span class="step-num">6</span>
+            <div>
+              <h4>Ollama (Optional)</h4>
+              <p>AI-powered notes. <a href="https://ollama.ai" target="_blank" rel="noopener">Download Ollama</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

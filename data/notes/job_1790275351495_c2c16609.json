@@ -1,0 +1,82 @@
+{
+  "title": "Lecture 1 — Lecture 02 - Fundamentals of Information Systems-2",
+  "overview": "as we talked about in the last session this: being introduced last session this is being introduced last session this is being introduced as a core course for information systems as a core course for information systems discipline and in the las Now if we take another angle which: the information angle right this definition of data is mainly in the definitio",
+  "simpleExplanation": "as we talked about in the last session this is being introduced last session this is being introduced last session this is being introduced as a core course for information systems as a core course for information system",
+  "definitions": [
+    {
+      "term": "as we talked about in the last session this",
+      "definition": "being introduced last session this is being introduced last session this is being introduced as a core course for information systems as a core course for information systems disci"
+    },
+    {
+      "term": "Now if we take another angle which",
+      "definition": "the information angle right"
+    },
+    {
+      "term": "which",
+      "definition": "the information angle right"
+    },
+    {
+      "term": "everything",
+      "definition": "there would be output"
+    },
+    {
+      "term": "very similar thing we",
+      "definition": "talking about here whatever we are talking about here whatever we are talking about here whatever machine component that we have it might machine component that we have it might ge"
+    }
+  ],
+  "keyPoints": [
+    "this definition of data is mainly in the definition of data is mainly in the definition of data is mainly in the information systems context right so information systems context ri",
+    "Can we take different information from different information from different information from maybe by changing the source or maybe we maybe by changing the source or maybe we can p",
+    "Until now we talked about data we talked about data we talked about data points and you organize them you arrange points and you organize them you arrange points and you organize t",
+    "a manager would be more interested in seeing would be more interested in seeing would be more interested in seeing total sales for a month rather total sales for a month rather tot",
+    "therefore if that therefore if that therefore if that source that information if you can source that information if you can source that information if you can quantize it if you ca",
+    "that transformation part is considered more transformation part is considered more transformation part is considered more valuable in information systems valuable in information sy"
+  ],
+  "importantTerms": [],
+  "steps": [
+    "We start at the data We start at the data We start at the data information and we generate the feedback information and we generate the feedback information and we generate the feedback mechanism for the system itself and",
+    "mechanism for the system itself and",
+    "for decision making so that for decision making so that for decision making so that we keep on improving on in terms of we keep on improving on in terms of insights of the output that are getting insights of the output that are getting insights of the output that are getting generated through those systems"
+  ],
+  "examples": [
+    {
+      "title": "",
+      "code": "",
+      "explanation": "Can we take different information from different information from different information from maybe by changing the source or maybe we maybe by changing the source or maybe we can provide additional information or can provide additional information or can provide additional information or maybe diffe"
+    },
+    {
+      "title": "",
+      "code": "",
+      "explanation": "some of the components within the machine that the components within the machine that the components within the machine that might be useful earlier but now with might be useful earlier but now with the advent of new technology the advent of new technology the advent of new technology we can replace"
+    }
+  ],
+  "formulas": [],
+  "comparisons": [],
+  "advantages": [
+    "people interacting and therefore that can be looked at to therefore that can be looked at to actually benefit right",
+    "data actually benefit right",
+    "what are other generic benefit of So what are other generic benefit of information system",
+    "know take advantage of that"
+  ],
+  "disadvantages": [],
+  "remember": "this definition of data is mainly in the definition of data is mainly in the definition of data is mainly in the information systems context right so information systems context ri",
+  "revision": [
+    "this definition of data is mainly in the definition of data is mainly in the definition of data is mainly in the information systems context right so information systems context ri",
+    "Can we take different information from different information from different information from maybe by changing the source or maybe we maybe by changing the source or maybe we can p",
+    "Until now we talked about data we talked about data we talked about data points and you organize them you arrange points and you organize them you arrange points and you organize t",
+    "a manager would be more interested in seeing would be more interested in seeing would be more interested in seeing total sales for a month rather total sales for a month rather tot",
+    "therefore if that therefore if that therefore if that source that information if you can source that information if you can source that information if you can quantize it if you ca"
+  ],
+  "questions": [
+    {
+      "question": "Explain: this definition of data is mainly in the definition of data is mainly in the def",
+      "answer": "this definition of data is mainly in the definition of data is mainly in the definition of data is mainly in the information systems context right so information systems context ri",
+      "type": "SHORT"
+    }
+  ],
+  "category": "OPERATING_SYSTEM",
+  "language": "English",
+  "examMode": false,
+  "diagram": {},
+  "engine": "extractive"
+}

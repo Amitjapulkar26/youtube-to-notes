@@ -1,0 +1,14 @@
+[2026-09-24T17:36:17.676Z] [INFO] [VALIDATING_URL] Validating YouTube URL...
+[2026-09-24T17:36:17.678Z] [INFO] Video ID: sVV2NDcZh5k
+[2026-09-24T17:36:17.678Z] [INFO] [FETCHING_VIDEO_INFO] Fetching lecture information...
+[2026-09-24T17:36:18.138Z] [INFO] [FETCHING_VIDEO_INFO] Found: Lecture 01 - Fundamentals of Information Systems-1
+[2026-09-24T17:36:18.141Z] [INFO] [TRYING_CAPTIONS] Checking for captions...
+[2026-09-24T17:36:18.142Z] [INFO] [TRYING_CAPTIONS] Trying caption method: manual_en (1/6)
+[2026-09-24T17:36:18.146Z] [INFO] [TRYING_CAPTIONS] Trying caption method: auto_en (2/6)
+[2026-09-24T17:36:18.148Z] [INFO] [TRYING_CAPTIONS] Trying caption method: manual_hi (3/6)
+[2026-09-24T17:36:18.151Z] [INFO] [TRYING_CAPTIONS] Trying caption method: auto_hi (4/6)
+[2026-09-24T17:36:18.153Z] [INFO] [TRYING_CAPTIONS] Trying caption method: manual_any (5/6)
+[2026-09-24T17:36:18.160Z] [INFO] [TRYING_CAPTIONS] Trying caption method: auto_any (6/6)
+[2026-09-24T17:36:18.164Z] [INFO] Captions unavailable: No captions available from any method
+[2026-09-24T17:36:18.164Z] [INFO] [CHECK_AUDIO_TOOLS] Captions unavailable. Checking audio tools...
+[2026-09-24T17:36:20.864Z] [INFO] [ERROR] FFmpeg is not installed. Cannot process audio. Please install FFmpeg.

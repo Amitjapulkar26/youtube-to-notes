@@ -1,0 +1,180 @@
+{
+  "title": "Binary Trees — Complete Guide",
+  "overview": "Today we're going to learn about Binary Trees, one of the most important data structures in computer science. A Binary Tree is a hierarchical data structure where each node has at most two children, called the left child and the right child. The topmost node is called the root node.",
+  "simpleExplanation": "Today we're going to learn about Binary Trees, one of the most important data structures in computer science. A Binary Tree is a hierarchical data structure where each node has at most two children, called the left child and the right child.",
+  "definitions": [
+    {
+      "term": "Binary Tree",
+      "definition": "a hierarchical data structure where each node has at most two children, called the left child and the right child."
+    },
+    {
+      "term": "topmost node",
+      "definition": "called the root node."
+    },
+    {
+      "term": "Binary Trees",
+      "definition": "used in many applications including file systems, databases, and expression parsing."
+    },
+    {
+      "term": "node",
+      "definition": "the fundamental unit of a tree."
+    },
+    {
+      "term": "root",
+      "definition": "the topmost node."
+    },
+    {
+      "term": "leaf node",
+      "definition": "a node with no children."
+    },
+    {
+      "term": "height of a tree",
+      "definition": "the number of edges on the longest path from root to a leaf."
+    },
+    {
+      "term": "depth of a node",
+      "definition": "the number of edges from the root to that node."
+    },
+    {
+      "term": "There",
+      "definition": "several types of binary trees."
+    },
+    {
+      "term": "Full Binary Tree",
+      "definition": "one where every node has either 0 or 2 children."
+    }
+  ],
+  "keyPoints": [
+    "A Binary Tree is a hierarchical data structure where each node has at most two children, called the left child and the right child.",
+    "A Perfect Binary Tree has all internal nodes with exactly 2 children and all leaves at the same level.",
+    "A Balanced Binary Tree has the height difference between left and right subtrees of any node as at most 1.",
+    "Inorder traversal visits left subtree, then root, then right subtree.",
+    "Preorder traversal visits root first, then left subtree, then right subtree.",
+    "Postorder traversal visits left subtree, then right subtree, then root.",
+    "Today we're going to learn about Binary Trees, one of the most important data structures in computer science.",
+    "A Full Binary Tree is one where every node has either 0 or 2 children.",
+    "Binary Tree traversal means visiting all nodes in a specific order.",
+    "A Binary Search Tree or BST is a special type of binary tree where the left child contains values less than the parent, and the right child contains v"
+  ],
+  "importantTerms": [
+    "binary",
+    "tree",
+    "node",
+    "left",
+    "root",
+    "trees",
+    "child",
+    "subtree",
+    "traversal",
+    "step",
+    "data",
+    "children",
+    "bst",
+    "nodes",
+    "visits"
+  ],
+  "steps": [
+    "Step 1: Start from the root.",
+    "Step 2: Compare the value to insert with the current node.",
+    "Step 3: If smaller, go to left child.",
+    "Step 4: If larger, go to right child.",
+    "Step 5: If the position is empty, insert the new node there."
+  ],
+  "examples": [],
+  "formulas": [
+    {
+      "formula": "O(log n)",
+      "meaning": "Time/Space complexity",
+      "example": ""
+    },
+    {
+      "formula": "O(n)",
+      "meaning": "Time/Space complexity",
+      "example": ""
+    }
+  ],
+  "comparisons": [
+    {
+      "itemA": "The time complexity for search, insert, and delete operations is O(log n) for a balanced BST,",
+      "itemB": "can degrade to O(n) for a skewed tree.",
+      "differences": [
+        {
+          "aspect": "Key difference",
+          "a": "The time complexity for search, insert, and delete operations is O(log n) for a balanced BST,",
+          "b": "can degrade to O(n) for a skewed tree."
+        }
+      ]
+    }
+  ],
+  "advantages": [
+    "This property makes searching very efficient.",
+    "Understanding them well is crucial for coding interviews and competitive programming."
+  ],
+  "disadvantages": [],
+  "remember": "Key takeaway: A Binary Tree is a hierarchical data structure where each node has at most two children, called the left child and the right child.",
+  "revision": [
+    "A Binary Tree is a hierarchical data structure where each node has at most two children, called the left child and the right child.",
+    "A Perfect Binary Tree has all internal nodes with exactly 2 children and all leaves at the same level.",
+    "A Balanced Binary Tree has the height difference between left and right subtrees of any node as at most 1.",
+    "Inorder traversal visits left subtree, then root, then right subtree.",
+    "Preorder traversal visits root first, then left subtree, then right subtree.",
+    "Postorder traversal visits left subtree, then right subtree, then root.",
+    "Today we're going to learn about Binary Trees, one of the most important data structures in computer science."
+  ],
+  "questions": [
+    {
+      "question": "What is Binary Tree?",
+      "answer": "a hierarchical data structure where each node has at most two children, called the left child and the right child.",
+      "type": "DEFINITION"
+    },
+    {
+      "question": "What is topmost node?",
+      "answer": "called the root node.",
+      "type": "DEFINITION"
+    },
+    {
+      "question": "What is Binary Trees?",
+      "answer": "used in many applications including file systems, databases, and expression parsing.",
+      "type": "DEFINITION"
+    },
+    {
+      "question": "Explain: A Binary Tree is a hierarchical data structure where each node has at most two c",
+      "answer": "A Binary Tree is a hierarchical data structure where each node has at most two children, called the left child and the right child.",
+      "type": "SHORT"
+    },
+    {
+      "question": "Explain: A Perfect Binary Tree has all internal nodes with exactly 2 children and all lea",
+      "answer": "A Perfect Binary Tree has all internal nodes with exactly 2 children and all leaves at the same level.",
+      "type": "SHORT"
+    },
+    {
+      "question": "Explain: A Balanced Binary Tree has the height difference between left and right subtrees",
+      "answer": "A Balanced Binary Tree has the height difference between left and right subtrees of any node as at most 1.",
+      "type": "SHORT"
+    },
+    {
+      "question": "Which of the following is a key concept discussed in this lecture?",
+      "answer": "binary",
+      "type": "MCQ",
+      "options": [
+        "binary",
+        "Unrelated Term A",
+        "tree",
+        "Unrelated Term B"
+      ]
+    }
+  ],
+  "category": "DATA_STRUCTURE",
+  "language": "English",
+  "examMode": false,
+  "diagram": {
+    "type": "tree",
+    "title": "Binary Tree Structure",
+    "content": "        [Root]\n       /      \\\n    [Left]   [Right]\n    /   \\     /   \\\n  [L1] [L2] [R1] [R2]",
+    "labels": [
+      "Each node has at most 2 children",
+      "Left subtree ≤ Root ≤ Right subtree (BST)"
+    ]
+  },
+  "engine": "extractive"
+}
